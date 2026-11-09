@@ -1,0 +1,30 @@
+{
+  "name": "vaultx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run dev --prefix client",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently -k -n CLIENT,SERVER -c blue,green \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MANAN-8017/VaultX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MANAN-8017/VaultX/issues"
+  },
+  "homepage": "https://github.com/MANAN-8017/VaultX#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
